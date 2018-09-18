@@ -28,16 +28,15 @@ export default class NewBlog extends Command {
 
   async run() {
     const { args, flags } = this.parse(NewBlog);
-    const starter = starters.find(s => s.name === flags.starter);
 
     if (!args.path) {
-      this.error(errors.new.blog.no_path());
-      return;
+      return this.error(errors.new.blog.no_path());
     }
 
+    const starter = starters.find(s => s.name === flags.starter);
+
     if (!starter) {
-      this.error(errors.new.blog.invalid_starter(flags.starter));
-      return;
+      return this.error(errors.new.blog.invalid_starter(flags.starter));
     }
 
     if (args.path) {
