@@ -30,6 +30,9 @@
   <a href="https://oclif.io/">
     <img src="https://img.shields.io/badge/CLI-oclif-blue.svg" alt="Powered by oclif." />
   </a>
+  <a href="https://spectrum.chat/syntra/gsv">
+    <img src="https://withspectrum.github.io/badge/badge.svg" alt="Join the community on Spectrum." />
+  </a>
 </p>
 
 <!-- toc -->
