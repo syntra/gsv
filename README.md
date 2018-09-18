@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://next.gatsbyjs.org">
-    <img alt="gsv icon" src="https://i.imgur.com/w0A4Qjj.png" width="150" />
-  </a>
+  <img alt="gsv icon" src="https://i.imgur.com/w0A4Qjj.png" width="150" />
 </p>
 <h1 align="center">
   gsv
