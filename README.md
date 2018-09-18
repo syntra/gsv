@@ -19,8 +19,11 @@
   <a href="https://travis-ci.org/syntra/gsv">
     <img src="https://img.shields.io/travis/syntra/gsv.svg?style=flat-square" alt="Current TravisCI build status." />
   </a>
-  <a href="https://codecov.io/gh/syntra/gsv">
-    <img src="https://img.shields.io/codecov/c/github/syntra/gsv.svg?style=flat-square" alt="Code coverage via codecov." />
+  <a href="https://codeclimate.com/github/syntra/gsv/maintainability">
+    <img src="https://img.shields.io/codeclimate/maintainability/syntra/gsv.svg?style=flat-square" alt="Code Climate maintainability grade." />
+  </a>
+  <a href="https://codeclimate.com/github/syntra/gsv/trends/test_coverage_total">
+    <img src="https://img.shields.io/codeclimate/coverage/syntra/gsv.svg?style=flat-square" alt="Code Climate test coverage." />
   </a>
   <img src="https://img.shields.io/node/v/gsv.svg?style=flat-square" alt="Minimum node version supported." />
   <a href="https://www.npmjs.org/package/gsv">
