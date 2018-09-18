@@ -15,6 +15,10 @@ const errors: ErrorList = {
         message: "Path is required",
         exit: 100,
       }),
+      invalid_starter: starter => ({
+        message: `"${starter}" is not a valid starter.`,
+        exit: 101,
+      }),
     },
   },
 };

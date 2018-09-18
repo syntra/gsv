@@ -36,11 +36,7 @@ export default class NewBlog extends Command {
     }
 
     if (!starter) {
-      this.error(
-        new Error(
-          `Invalid starter! ${flags.starter} was not found in starters array.`
-        )
-      );
+      this.error(errors.new.blog.invalid_starter(flags.starter));
       return;
     }
 
