@@ -18,6 +18,9 @@
   <a href="https://travis-ci.org/syntra/gsv">
     <img src="https://travis-ci.org/syntra/gsv.svg?branch=master" alt="Current TravisCI build status." />
   </a>
+  <a href="https://codecov.io/gh/syntra/gsv">
+    <img src="https://img.shields.io/codecov/c/github/syntra/gsv.svg" alt="Code coverage via codecov." />
+  </a>
   <a href="https://www.npmjs.org/package/gsv">
     <img src="https://img.shields.io/npm/v/gsv.svg" alt="Current npm package version." />
   </a>
