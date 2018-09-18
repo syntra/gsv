@@ -1,0 +1,70 @@
+{
+  "name": "gsv",
+  "description": "Opinionated gatsby starter with powerful cli tools",
+  "version": "0.0.0",
+  "author": "Garet McKinley @garetmckinley",
+  "bin": {
+    "gsv": "./bin/run"
+  },
+  "bugs": "https://github.com/syntra/gsv/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "chalk": "^2.4.1",
+    "emojic": "^1.1.14",
+    "gatsby-cli": "^2.4.0",
+    "tslib": "^1",
+    "yeoman-environment": "^2.3.3",
+    "yeoman-generator": "^3.1.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "@types/yeoman-generator": "^2.0.3",
+    "chai": "^4",
+    "globby": "^8",
+    "mocha": "^5",
+    "nyc": "^13",
+    "ts-node": "^7",
+    "tslint": "^5",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/templates"
+  ],
+  "homepage": "https://github.com/syntra/gsv",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "gsv",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "syntra/gsv",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
