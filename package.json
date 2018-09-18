@@ -15,6 +15,7 @@
     "chalk": "^2.4.1",
     "emojic": "^1.1.14",
     "gatsby-cli": "^2.4.0",
+    "rimraf": "^2.6.2",
     "tslib": "^1",
     "yeoman-environment": "^2.3.3",
     "yeoman-generator": "^3.1.1"
@@ -26,6 +27,7 @@
     "@types/chai": "^4",
     "@types/mocha": "^5",
     "@types/node": "^10",
+    "@types/rimraf": "^2.0.2",
     "@types/yeoman-generator": "^2.0.3",
     "chai": "^4",
     "globby": "^8",
