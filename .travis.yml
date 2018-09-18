@@ -11,11 +11,11 @@ script:
 jobs:
   include:
     - stage: coverage
-    node_js: "lts/*"
-    install:
-      - yarn install
-      - npm install -g codecov codeclimate-test-reporter
-    script:
-      - nyc report --report-dir=coverage/ --reporter=text-lcov > coverage.lcov
-      - codecov
-      - codeclimate-test-reporter < coverage.lcov
+      node_js: "lts/*"
+      install:
+        - yarn install
+        - npm install -g codecov codeclimate-test-reporter
+      script:
+        - nyc report --report-dir=coverage/ --reporter=text-lcov > coverage.lcov
+        - codecov
+        - codeclimate-test-reporter < coverage.lcov
