@@ -32,6 +32,7 @@
   <a href="https://oclif.io/">
     <img src="https://img.shields.io/badge/CLI-oclif-394351.svg?style=flat-square" alt="Powered by oclif." />
   </a>
+  <img src="http://hits.dwyl.io/syntra/gsv.svg" />
 </p>
 
 <img src="https://img.gitbutn.io/hint/?&txt=Notice:%20gsv%20is%20still%20in%20the%20early%20pre-alpha%20stage%20and%20not%20ready%20for%20use.&type=warning" width="100%" />
