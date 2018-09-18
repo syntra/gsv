@@ -3,4 +3,9 @@ node_js:
   - "lts/*"
   - "node"
   - "8"
-script: npm run test
+install:
+  - npm install -g codecov
+script:
+  - npm run test
+  - nyc report --reporter=text-lcov > coverage.lcov && codecov
+  - codecov
