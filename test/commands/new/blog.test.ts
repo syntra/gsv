@@ -7,4 +7,9 @@ describe("new:blog", () => {
     .command(["new:blog"])
     .exit(errors.new.blog.no_path().exit)
     .it("fails when no path is supplied");
+  test
+    .stdout()
+    .command(["new:blog", "path", "--starter", "invalid-starter"])
+    .exit(errors.new.blog.invalid_starter().exit)
+    .it("fails when invalid starter is set");
 });
