@@ -13,7 +13,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/syntra/gsv/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/gsv.svg" alt="gsv is released under the MIT license." />
+    <img src="https://img.shields.io/badge/license-MIT-974FC9.svg" alt="gsv is released under the MIT license." />
   </a>
   <a href="https://travis-ci.org/syntra/gsv">
     <img src="https://travis-ci.org/syntra/gsv.svg?branch=master" alt="Current TravisCI build status." />
@@ -28,7 +28,7 @@
     <img src="https://img.shields.io/npm/dw/gsv.svg" alt="Downloads per month on npm." />
   </a>
   <a href="https://oclif.io/">
-    <img src="https://img.shields.io/badge/CLI-oclif-blue.svg" alt="Powered by oclif." />
+    <img src="https://img.shields.io/badge/CLI-oclif-394351.svg" alt="Powered by oclif." />
   </a>
   <a href="https://spectrum.chat/syntra/gsv">
     <img src="https://withspectrum.github.io/badge/badge.svg" alt="Join the community on Spectrum." />
