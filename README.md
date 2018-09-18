@@ -30,7 +30,7 @@ USAGE
 <!-- commands -->
 * [`gsv hello [FILE]`](#gsv-hello-file)
 * [`gsv help [COMMAND]`](#gsv-help-command)
-* [`gsv new:blog [FILE]`](#gsv-newblog-file)
+* [`gsv new:blog [PATH]`](#gsv-newblog-path)
 * [`gsv new:page [FILE]`](#gsv-newpage-file)
 * [`gsv new:post [FILE]`](#gsv-newpost-file)
 
@@ -52,7 +52,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/syntra/gsv/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/hello.ts)_
 
 ## `gsv help [COMMAND]`
 
@@ -71,21 +71,21 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)_
 
-## `gsv new:blog [FILE]`
+## `gsv new:blog [PATH]`
 
 creates a new gatsby blog
 
 ```
 USAGE
-  $ gsv new:blog [FILE]
+  $ gsv new:blog [PATH]
 
 OPTIONS
   -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help             show CLI help
+  -n, --starter=starter  [default: default] gatsby sttarter to use
 ```
 
-_See code: [src/commands/new/blog.ts](https://github.com/syntra/gsv/blob/v0.0.0/src/commands/new/blog.ts)_
+_See code: [src/commands/new/blog.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/new/blog.ts)_
 
 ## `gsv new:page [FILE]`
 
@@ -101,7 +101,7 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/page.ts](https://github.com/syntra/gsv/blob/v0.0.0/src/commands/new/page.ts)_
+_See code: [src/commands/new/page.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/new/page.ts)_
 
 ## `gsv new:post [FILE]`
 
@@ -117,5 +117,5 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/post.ts](https://github.com/syntra/gsv/blob/v0.0.0/src/commands/new/post.ts)_
+_See code: [src/commands/new/post.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/new/post.ts)_
 <!-- commandsstop -->
