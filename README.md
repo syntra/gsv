@@ -26,9 +26,6 @@
   <a href="https://www.npmjs.org/package/gsv">
     <img src="https://img.shields.io/npm/v/gsv.svg?style=flat-square" alt="Current npm package version." />
   </a>
-  <a href="https://npmcharts.com/compare/gsv?minimal=true">
-    <img src="https://img.shields.io/npm/dw/gsv.svg?style=flat-square" alt="Downloads per month on npm." />
-  </a>
   <a href="https://oclif.io/">
     <img src="https://img.shields.io/badge/CLI-oclif-394351.svg?style=flat-square" alt="Powered by oclif." />
   </a>
