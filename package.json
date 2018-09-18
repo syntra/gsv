@@ -1,12 +1,12 @@
 {
   "name": "gsv",
-  "description": "Opinionated gatsby starter with powerful cli tools",
+  "description": "Powerful CLI tools for managing Gatsby blogs",
   "version": "0.0.1",
   "author": "Garet McKinley @garetmckinley",
   "bin": {
     "gsv": "./bin/run"
   },
-  "bugs": "https://github.com/gsv/cli/issues",
+  "bugs": "https://github.com/syntra/gsv/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -46,7 +46,7 @@
     "/oclif.manifest.json",
     "/templates"
   ],
-  "homepage": "https://github.com/gsv/cli",
+  "homepage": "https://github.com/syntra/gsv",
   "keywords": [
     "oclif"
   ],
@@ -59,7 +59,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "gsv/cli",
+  "repository": "syntra/gsv",
   "scripts": {
     "lint": "tslint -p test -t stylish",
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
