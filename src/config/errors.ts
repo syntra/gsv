@@ -12,7 +12,8 @@ const errors: ErrorList = {
   new: {
     blog: {
       no_path: () => ({
-        message: "Path is required",
+        message: "path is required",
+        help: "gsv new:blog [PATH]",
         exit: 100,
       }),
       invalid_starter: starter => ({

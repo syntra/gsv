@@ -25,8 +25,14 @@ export default abstract class Command extends OCommand {
   ): input is CLIError {
     // @ts-ignore
     if (typeof input === "object" && input.message && input.exit) {
+      const output = [input.message];
       // @ts-ignore
-      return Errors.error(input.message, { exit: input.exit });
+      if (input.help) {
+        // @ts-ignore
+        output.push(input.help);
+      }
+      // @ts-ignore
+      return Errors.error(output.join("\n"), { exit: input.exit });
     }
     // @ts-ignore
     return Errors.error(input, options as any);
