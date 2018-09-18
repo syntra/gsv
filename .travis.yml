@@ -5,8 +5,9 @@ node_js:
   - "8"
 install:
   - yarn install
-  - npm install -g codecov
+  - npm install -g codecov coveralls
 script:
   - npm run test
   - nyc report --reporter=json > coverage.json
   - codecov
+  - coveralls
