@@ -1,17 +1,10 @@
-import {expect, test} from '@oclif/test'
+import { expect, test } from "@oclif/test";
+import errors from "../../../src/config/errors";
 
-describe('new:blog', () => {
+describe("new:blog", () => {
   test
     .stdout()
-    .command(['new:blog'])
-    .it('runs hello', ctx => {
-      expect(ctx.stdout).to.contain('hello world')
-    })
-
-  test
-    .stdout()
-    .command(['new:blog', '--name', 'jeff'])
-    .it('runs hello --name jeff', ctx => {
-      expect(ctx.stdout).to.contain('hello jeff')
-    })
-})
+    .command(["new:blog"])
+    .exit(errors.new.blog.no_path.exit)
+    .it("fails when no path is supplied");
+});

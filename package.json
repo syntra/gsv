@@ -6,10 +6,11 @@
   "bin": {
     "gsv": "./bin/run"
   },
-  "bugs": "https://github.com/syntra/gsv/issues",
+  "bugs": "https://github.com/gsv/cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "@oclif/errors": "^1.2.1",
     "@oclif/plugin-help": "^2",
     "chalk": "^2.4.1",
     "emojic": "^1.1.14",
@@ -45,7 +46,7 @@
     "/oclif.manifest.json",
     "/templates"
   ],
-  "homepage": "https://github.com/syntra/gsv",
+  "homepage": "https://github.com/gsv/cli",
   "keywords": [
     "oclif"
   ],
@@ -58,10 +59,11 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "syntra/gsv",
+  "repository": "gsv/cli",
   "scripts": {
+    "lint": "tslint -p test -t stylish",
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
-    "posttest": "tslint -p test -t stylish",
+    "posttest": "yarn lint",
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"

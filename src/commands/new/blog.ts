@@ -1,11 +1,13 @@
 import { flags } from "@oclif/command";
-import Command from "../../command";
-import git from "../../utils/git";
-import starters from "../../config/starters";
 
-export interface Options {
-  name: string;
-}
+import Command from "../../command";
+import errors from "../../config/errors";
+import starters from "../../config/starters";
+import git from "../../utils/git";
+
+// export interface Options {
+//   name: string;
+// }
 
 export default class NewBlog extends Command {
   static description = "creates a new gatsby blog";
@@ -28,12 +30,18 @@ export default class NewBlog extends Command {
     const { args, flags } = this.parse(NewBlog);
     const starter = starters.find(s => s.name === flags.starter);
 
+    if (!args.path) {
+      this.error(errors.new.blog.no_path);
+      return;
+    }
+
     if (!starter) {
       this.error(
         new Error(
           `Invalid starter! ${flags.starter} was not found in starters array.`
         )
       );
+      return;
     }
 
     if (args.path) {
