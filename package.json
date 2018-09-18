@@ -33,6 +33,7 @@
     "globby": "^8",
     "mocha": "^5",
     "nyc": "^13",
+    "replace-in-file": "^3.4.2",
     "ts-node": "^7",
     "tslint": "^5",
     "tslint-config-prettier": "^1.15.0",
@@ -68,7 +69,9 @@
     "posttest": "yarn lint",
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme --multi && git add README.md",
+    "docs": "oclif-dev readme --multi",
+    "postdocs": "node scripts/postprocess-docs.js"
   },
   "types": "lib/index.d.ts"
 }

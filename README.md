@@ -38,7 +38,7 @@
 
 <!-- toc -->
 * [🏗 Usage](#-usage)
-* [🔨 Commands](#-commands)
+* [🔨 Command Topics](#command-topics)
 * [💻 Contributing](#-contributing)
 * [📜 License](#-license)
 * [📣 Feedback](#-feedback)
@@ -57,81 +57,16 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-# 🔨 Commands
 <!-- commands -->
-* [`gsv help [COMMAND]`](#gsv-help-command)
-* [`gsv new:blog [PATH]`](#gsv-newblog-path)
-* [`gsv new:page [FILE]`](#gsv-newpage-file)
-* [`gsv new:post [FILE]`](#gsv-newpost-file)
+# 🔨 Command Topics
 
-## `gsv help [COMMAND]`
+* [`gsv help`](docs/help.md) - display help for gsv
+* [`gsv new`](docs/new.md) - creates a new gatsby blog
 
-display help for gsv
-
-```
-USAGE
-  $ gsv help [COMMAND]
-
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
-```
-
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)_
-
-## `gsv new:blog [PATH]`
-
-creates a new gatsby blog
-
-```
-USAGE
-  $ gsv new:blog [PATH]
-
-OPTIONS
-  -f, --force
-  -h, --help             show CLI help
-  -n, --starter=starter  [default: default] gatsby sttarter to use
-```
-
-_See code: [src/commands/new/blog.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/blog.ts)_
-
-## `gsv new:page [FILE]`
-
-add a new page to the current blog
-
-```
-USAGE
-  $ gsv new:page [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/new/page.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/page.ts)_
-
-## `gsv new:post [FILE]`
-
-add a new post to the current blog
-
-```
-USAGE
-  $ gsv new:post [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/new/post.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/post.ts)_
 <!-- commandsstop -->
 
 # 💻 Contributing
-### ![Contributions welocome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
+### ![Contributions welcome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
 
 Want to help gsv grow? We welcome all contributions, big or small! Check out the [contributing docs](https://github.com/syntra/gsv/blob/master/CONTRIBUTING.md) for more information.
 
