@@ -5,9 +5,10 @@ node_js:
   - "8"
 install:
   - yarn install
-  - npm install -g codecov coveralls
+  - npm install -g codecov codeclimate-test-reporter
+
 script:
   - npm run test
-  - nyc report --reporter=json > coverage.json
+  - nyc report --report-dir=coverage/ --reporter=text-lcov > coverage.lcov
   - codecov
-  - coveralls
+  - codeclimate-test-reporter < coverage.lcov
