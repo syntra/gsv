@@ -3,7 +3,7 @@ import { CLIError } from "../types";
 interface ErrorList {
   new: {
     blog: {
-      [key: string]: CLIError;
+      [key: string]: (...args: any[]) => CLIError;
     };
   };
 }
@@ -11,10 +11,10 @@ interface ErrorList {
 const errors: ErrorList = {
   new: {
     blog: {
-      no_path: {
+      no_path: () => ({
         message: "Path is required",
         exit: 100,
-      },
+      }),
     },
   },
 };

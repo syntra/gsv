@@ -31,7 +31,7 @@ export default class NewBlog extends Command {
     const starter = starters.find(s => s.name === flags.starter);
 
     if (!args.path) {
-      this.error(errors.new.blog.no_path);
+      this.error(errors.new.blog.no_path());
       return;
     }
 

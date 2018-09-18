@@ -5,6 +5,6 @@ describe("new:blog", () => {
   test
     .stdout()
     .command(["new:blog"])
-    .exit(errors.new.blog.no_path.exit)
+    .exit(errors.new.blog.no_path().exit)
     .it("fails when no path is supplied");
 });
