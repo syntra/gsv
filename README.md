@@ -39,7 +39,7 @@
 
 <!-- toc -->
 * [🏗 Usage](#-usage)
-* [🔨 Command Topics](#command-topics)
+* [🔨 Command Topics](#-command-topics)
 * [💻 Contributing](#-contributing)
 * [📜 License](#-license)
 * [📣 Feedback](#-feedback)
