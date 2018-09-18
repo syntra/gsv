@@ -13,10 +13,10 @@ const errors: ErrorList = {
     blog: {
       no_path: {
         message: "Path is required",
-        exit: 100
-      }
-    }
-  }
+        exit: 100,
+      },
+    },
+  },
 };
 
 export default errors;

@@ -18,10 +18,10 @@ export default class NewBlog extends Command {
     starter: flags.string({
       char: "n",
       description: "gatsby sttarter to use",
-      default: "default"
+      default: "default",
     }),
     // flag with no value (-f, --force)
-    force: flags.boolean({ char: "f" })
+    force: flags.boolean({ char: "f" }),
   };
 
   static args = [{ name: "path" }];
@@ -46,7 +46,7 @@ export default class NewBlog extends Command {
 
     if (args.path) {
       await git.clone(starter.url, args.path, {
-        log: this.log
+        log: this.log,
       });
       this.success("Done!");
     }
