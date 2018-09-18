@@ -10,27 +10,27 @@
   Create a blog in seconds. Add pages and posts all from the command-line.
 </p>
 <p align="center">
+  <a href="https://spectrum.chat/syntra/gsv">
+    <img src="https://img.shields.io/badge/chat-on%20spectrum-7B16FF.svg?style=flat-square" alt="Join the community on Spectrum." />
+  </a>
   <a href="https://github.com/syntra/gsv/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-974FC9.svg" alt="gsv is released under the MIT license." />
+    <img src="https://img.shields.io/badge/license-MIT-974FC9.svg?style=flat-square" alt="gsv is released under the MIT license." />
   </a>
   <a href="https://travis-ci.org/syntra/gsv">
-    <img src="https://travis-ci.org/syntra/gsv.svg?branch=master" alt="Current TravisCI build status." />
+    <img src="https://img.shields.io/travis/syntra/gsv.svg?style=flat-square" alt="Current TravisCI build status." />
   </a>
   <a href="https://codecov.io/gh/syntra/gsv">
-    <img src="https://img.shields.io/codecov/c/github/syntra/gsv.svg" alt="Code coverage via codecov." />
+    <img src="https://img.shields.io/codecov/c/github/syntra/gsv.svg?style=flat-square" alt="Code coverage via codecov." />
   </a>
-  <img src="https://img.shields.io/node/v/gsv.svg" alt="Minimum node version supported." />
+  <img src="https://img.shields.io/node/v/gsv.svg?style=flat-square" alt="Minimum node version supported." />
   <a href="https://www.npmjs.org/package/gsv">
-    <img src="https://img.shields.io/npm/v/gsv.svg" alt="Current npm package version." />
+    <img src="https://img.shields.io/npm/v/gsv.svg?style=flat-square" alt="Current npm package version." />
   </a>
   <a href="https://npmcharts.com/compare/gsv?minimal=true">
-    <img src="https://img.shields.io/npm/dw/gsv.svg" alt="Downloads per month on npm." />
+    <img src="https://img.shields.io/npm/dw/gsv.svg?style=flat-square" alt="Downloads per month on npm." />
   </a>
   <a href="https://oclif.io/">
-    <img src="https://img.shields.io/badge/CLI-oclif-394351.svg" alt="Powered by oclif." />
-  </a>
-  <a href="https://spectrum.chat/syntra/gsv">
-    <img src="https://withspectrum.github.io/badge/badge.svg" alt="Join the community on Spectrum." />
+    <img src="https://img.shields.io/badge/CLI-oclif-394351.svg?style=flat-square" alt="Powered by oclif." />
   </a>
 </p>
 
