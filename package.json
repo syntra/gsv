@@ -1,7 +1,7 @@
 {
   "name": "gsv",
   "description": "Opinionated gatsby starter with powerful cli tools",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Garet McKinley @garetmckinley",
   "bin": {
     "gsv": "./bin/run"

@@ -19,7 +19,7 @@ $ npm install -g gsv
 $ gsv COMMAND
 running command...
 $ gsv (-v|--version|version)
-gsv/0.0.0 linux-x64 node-v10.10.0
+gsv/0.0.1 linux-x64 node-v10.10.0
 $ gsv --help [COMMAND]
 USAGE
   $ gsv COMMAND
@@ -52,7 +52,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `gsv help [COMMAND]`
 
@@ -85,7 +85,7 @@ OPTIONS
   -n, --starter=starter  [default: default] gatsby sttarter to use
 ```
 
-_See code: [src/commands/new/blog.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/new/blog.ts)_
+_See code: [src/commands/new/blog.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/blog.ts)_
 
 ## `gsv new:page [FILE]`
 
@@ -101,7 +101,7 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/page.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/new/page.ts)_
+_See code: [src/commands/new/page.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/page.ts)_
 
 ## `gsv new:post [FILE]`
 
@@ -117,5 +117,5 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/post.ts](https://github.com/gsv/cli/blob/v0.0.0/src/commands/new/post.ts)_
+_See code: [src/commands/new/post.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/post.ts)_
 <!-- commandsstop -->
