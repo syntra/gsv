@@ -34,10 +34,13 @@
 </p>
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+* [🏗 Usage](#-usage)
+* [🔨 Commands](#-commands)
+* [💻 Contributing](#-contributing-)
+* [📜 License](#-license)
+* [📣 Feedback](#-feedback)
 <!-- tocstop -->
-# Usage
+# 🏗 Usage
 <!-- usage -->
 ```sh-session
 $ npm install -g gsv
@@ -51,7 +54,7 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-# Commands
+# 🔨 Commands
 <!-- commands -->
 - [Usage](#usage)
 - [Commands](#commands)
@@ -146,3 +149,15 @@ OPTIONS
 
 _See code: [src/commands/new/post.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/post.ts)_
 <!-- commandsstop -->
+
+# 💻 Contributing ![Contributions welocome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
+
+Want to help gsv grow? We welcome all contributions, big or small! Check out the [contributing docs](https://github.com/syntra/gsv/blob/master/CONTRIBUTING.md) for more information.
+
+# 📜 License
+
+[MIT](https://github.com/syntra/gsv/blob/master/LICENSE) © 2018 Syntra
+
+# 📣 Feedback
+
+If you have any suggestions or just want to let us know what you think of gsv, join our [spectrum community](https://spectrum.chat/syntra/gsv)!
