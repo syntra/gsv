@@ -19,6 +19,7 @@
   <a href="https://codecov.io/gh/syntra/gsv">
     <img src="https://img.shields.io/codecov/c/github/syntra/gsv.svg" alt="Code coverage via codecov." />
   </a>
+  <img src="https://img.shields.io/node/v/gsv.svg" alt="Minimum node version supported." />
   <a href="https://www.npmjs.org/package/gsv">
     <img src="https://img.shields.io/npm/v/gsv.svg" alt="Current npm package version." />
   </a>
