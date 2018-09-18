@@ -1,12 +1,33 @@
-gsv
-===
+<p align="center">
+  <a href="https://next.gatsbyjs.org">
+    <img alt="gsv icon" src="https://i.imgur.com/w0A4Qjj.png" width="150" />
+  </a>
+</p>
+<h1 align="center">
+  gsv
+</h1>
 
-Opinionated gatsby starter with powerful cli tools
-
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/gsv.svg)](https://npmjs.org/package/gsv)
-[![Downloads/week](https://img.shields.io/npm/dw/gsv.svg)](https://npmjs.org/package/gsv)
-[![License](https://img.shields.io/npm/l/gsv.svg)](https://github.com/syntra/gsv/blob/master/package.json)
+<p align="center">
+  <strong>Powerful CLI tools for managing Gatsby blogs</strong><br>
+  Create a blog in seconds. Add pages and posts all from the command-line.
+</p>
+<p align="center">
+  <a href="https://github.com/syntra/gsv/blob/master/LICENSE">
+    <img src="https://img.shields.io/npm/l/gsv.svg" alt="gsv is released under the MIT license." />
+  </a>
+  <a href="https://travis-ci.org/syntra/gsv">
+    <img src="https://travis-ci.org/syntra/gsv.svg?branch=master" alt="Current TravisCI build status." />
+  </a>
+  <a href="https://www.npmjs.org/package/gsv">
+    <img src="https://img.shields.io/npm/v/gsv.svg" alt="Current npm package version." />
+  </a>
+  <a href="https://npmcharts.com/compare/gsv?minimal=true">
+    <img src="https://img.shields.io/npm/dw/gsv.svg" alt="Downloads per month on npm." />
+  </a>
+  <a href="https://oclif.io/">
+    <img src="https://img.shields.io/badge/CLI-oclif-blue.svg" alt="Powered by oclif." />
+  </a>
+</p>
 
 <!-- toc -->
 * [Usage](#usage)
@@ -28,11 +49,13 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`gsv hello [FILE]`](#gsv-hello-file)
-* [`gsv help [COMMAND]`](#gsv-help-command)
-* [`gsv new:blog [PATH]`](#gsv-newblog-path)
-* [`gsv new:page [FILE]`](#gsv-newpage-file)
-* [`gsv new:post [FILE]`](#gsv-newpost-file)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`gsv hello [FILE]`](#gsv-hello-file)
+  - [`gsv help [COMMAND]`](#gsv-help-command)
+  - [`gsv new:blog [PATH]`](#gsv-newblog-path)
+  - [`gsv new:page [FILE]`](#gsv-newpage-file)
+  - [`gsv new:post [FILE]`](#gsv-newpost-file)
 
 ## `gsv hello [FILE]`
 
