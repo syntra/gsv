@@ -34,7 +34,7 @@
 <!-- toc -->
 * [🏗 Usage](#-usage)
 * [🔨 Commands](#-commands)
-* [💻 Contributing](#-contributing-)
+* [💻 Contributing](#-contributing)
 * [📜 License](#-license)
 * [📣 Feedback](#-feedback)
 <!-- tocstop -->
@@ -54,33 +54,10 @@ USAGE
 <!-- usagestop -->
 # 🔨 Commands
 <!-- commands -->
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`gsv hello [FILE]`](#gsv-hello-file)
-  - [`gsv help [COMMAND]`](#gsv-help-command)
-  - [`gsv new:blog [PATH]`](#gsv-newblog-path)
-  - [`gsv new:page [FILE]`](#gsv-newpage-file)
-  - [`gsv new:post [FILE]`](#gsv-newpost-file)
-
-## `gsv hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ gsv hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ gsv hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/hello.ts)_
+* [`gsv help [COMMAND]`](#gsv-help-command)
+* [`gsv new:blog [PATH]`](#gsv-newblog-path)
+* [`gsv new:page [FILE]`](#gsv-newpage-file)
+* [`gsv new:post [FILE]`](#gsv-newpost-file)
 
 ## `gsv help [COMMAND]`
 
@@ -113,7 +90,7 @@ OPTIONS
   -n, --starter=starter  [default: default] gatsby sttarter to use
 ```
 
-_See code: [src/commands/new/blog.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/blog.ts)_
+_See code: [src/commands/new/blog.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/blog.ts)_
 
 ## `gsv new:page [FILE]`
 
@@ -129,7 +106,7 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/page.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/page.ts)_
+_See code: [src/commands/new/page.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/page.ts)_
 
 ## `gsv new:post [FILE]`
 
@@ -145,10 +122,11 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/post.ts](https://github.com/gsv/cli/blob/v0.0.1/src/commands/new/post.ts)_
+_See code: [src/commands/new/post.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/post.ts)_
 <!-- commandsstop -->
 
-# 💻 Contributing ![Contributions welocome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
+# 💻 Contributing
+### ![Contributions welocome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
 
 Want to help gsv grow? We welcome all contributions, big or small! Check out the [contributing docs](https://github.com/syntra/gsv/blob/master/CONTRIBUTING.md) for more information.
 
