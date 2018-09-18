@@ -34,6 +34,8 @@
   </a>
 </p>
 
+<img src="https://img.gitbutn.io/hint/?&txt=Notice:%20gsv%20is%20still%20in%20the%20early%20pre-alpha%20stage%20and%20not%20ready%20for%20use.&type=warning" width="100%" />
+
 <!-- toc -->
 * [🏗 Usage](#-usage)
 * [🔨 Commands](#-commands)
@@ -135,7 +137,7 @@ Want to help gsv grow? We welcome all contributions, big or small! Check out the
 
 # 📜 License
 
-[MIT](https://github.com/syntra/gsv/blob/master/LICENSE) © 2018 Syntra
+[![MIT](https://img.gitbutn.io/button/?&title=MIT&sub=%C2%A9%202018%20Syntra&icon=legal&ico=ffffff&lco=663698&rco=984dcb&tc=ffffff&sc=ffffff&size=lg)](https://github.com/syntra/gsv/blob/master/LICENSE)
 
 # 📣 Feedback
 
