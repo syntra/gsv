@@ -75,4 +75,4 @@ const clone = async (
   });
 };
 
-export default { clone };
+export default clone;
