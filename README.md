@@ -61,8 +61,9 @@ USAGE
 <!-- commands -->
 # 🔨 Command Topics
 
+* [`gsv config`](docs/config.md) - manage gsv config
 * [`gsv help`](docs/help.md) - display help for gsv
-* [`gsv new`](docs/new.md) - creates a new gatsby blog
+* [`gsv new`](docs/new.md) - create new instances (blog|post|page)
 
 <!-- commandsstop -->
 
