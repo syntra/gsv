@@ -19,11 +19,15 @@ export default class ConfigInit extends Command {
       char: "f",
       description: "overrides existing .gsvrc",
     }),
+    dry: flags.boolean({
+      char: "d",
+      description: "don't write to .gsvrc",
+    }),
   };
 
   async run() {
     const {
-      flags: { title, url, force },
+      flags: { title, url, force, dry },
     } = this.parse(ConfigInit);
 
     const gitConfig = await git.config();
@@ -38,6 +42,11 @@ export default class ConfigInit extends Command {
       url,
       author: { name: gitConfig.user.name, email: gitConfig.user.email },
     };
+
+    // this.error(new Error("ERROR"));
+
+    // TODO: dry mode should output .gsvrc markup to stdout
+    if (dry) return;
 
     gsvrc.write(config, force).catch((err: string) => this.error(err));
   }
