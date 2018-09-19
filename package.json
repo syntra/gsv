@@ -11,7 +11,9 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/errors": "^1.2.1",
+    "@oclif/plugin-autocomplete": "^0.1.0",
     "@oclif/plugin-help": "^2",
+    "@oclif/plugin-not-found": "^1.2.0",
     "chalk": "^2.4.1",
     "emojic": "^1.1.14",
     "gatsby-cli": "^2.4.1",
@@ -61,7 +63,9 @@
     "commands": "./lib/commands",
     "bin": "gsv",
     "plugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@oclif/plugin-not-found",
+      "@oclif/plugin-autocomplete"
     ],
     "topics": {
       "config": {
