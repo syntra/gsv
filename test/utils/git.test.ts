@@ -22,4 +22,9 @@ describe("utils/git", () => {
     expect(existsSync(dest)).to.be.true;
     rimraf.sync(dest);
   });
+
+  it("loads config", async () => {
+    const config = await git.config();
+    expect(config).to.not.be.empty;
+  });
 });
