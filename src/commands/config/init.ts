@@ -5,7 +5,7 @@ import Command from "../../command";
 import git from "../../utils/git";
 
 export default class ConfigInit extends Command {
-  static description = "describe the command here";
+  static description = "initialize a fresh .gsvrc file";
 
   static flags = {
     help: flags.help({ char: "h" }),
@@ -35,6 +35,7 @@ export default class ConfigInit extends Command {
     // TODO: save config to .gsvrc
     this.log(config);
 
+    // TODO: allow the force flag to override existing .gsvrc file
     if (flags.force) {
       this.log(`you input --force and --file: ${args.file}`);
     }
