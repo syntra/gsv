@@ -62,7 +62,15 @@
     "bin": "gsv",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "topics": {
+      "config": {
+        "description": "manage gsv config"
+      },
+      "new": {
+        "description": "create new instances (blog|post|page)"
+      }
+    }
   },
   "repository": "syntra/gsv",
   "scripts": {
