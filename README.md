@@ -44,7 +44,9 @@
 * [📜 License](#-license)
 * [📣 Feedback](#-feedback)
 <!-- tocstop -->
+
 # 🏗 Usage
+
 <!-- usage -->
 ```sh-session
 $ npm install -g gsv
@@ -58,9 +60,11 @@ USAGE
 ...
 ```
 <!-- usagestop -->
+
 <!-- commands -->
 # 🔨 Command Topics
 
+* [`gsv autocomplete`](docs/autocomplete.md) - display autocomplete installation instructions
 * [`gsv config`](docs/config.md) - manage gsv config
 * [`gsv help`](docs/help.md) - display help for gsv
 * [`gsv new`](docs/new.md) - create new instances (blog|post|page)
