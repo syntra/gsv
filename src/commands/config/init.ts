@@ -15,7 +15,10 @@ export default class ConfigInit extends Command {
       required: true,
     }),
     url: flags.string({ char: "u", description: "blog url", required: true }),
-    force: flags.boolean({ char: "f" }),
+    force: flags.boolean({
+      char: "f",
+      description: "overrides existing .gsvrc",
+    }),
   };
 
   async run() {
