@@ -42,7 +42,7 @@ export default abstract class Command extends OCommand {
     // tslint:disable-next-line strict-type-predicates
     message = typeof message === "string" ? message : inspect(message);
     const prefix = chalk.green(` ${emojic.heavyCheckMark}  `);
-    process.stdout.write(format(prefix, message, ...args).trim() + "\n");
+    process.stdout.write(prefix + format(message, ...args).trim() + "\n");
   }
 
   log(message = "", ...args: any[]) {
