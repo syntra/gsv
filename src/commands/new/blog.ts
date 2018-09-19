@@ -14,13 +14,15 @@ export default class NewBlog extends Command {
 
   static flags = {
     help: flags.help({ char: "h" }),
-    // flag with a value (-n, --name=VALUE)
     starter: flags.string({
-      char: "n",
-      description: "gatsby sttarter to use",
+      char: "s",
+      description: "gatsby starter to use",
       default: "default",
     }),
-    // flag with no value (-f, --force)
+    customStarter: flags.string({
+      char: "c",
+      description: "use a custom git repo as a starter",
+    }),
     force: flags.boolean({ char: "f" }),
   };
 
@@ -33,14 +35,20 @@ export default class NewBlog extends Command {
       return this.error(errors.new.blog.no_path());
     }
 
-    const starter = starters.find(s => s.name === flags.starter);
+    let starterUrl: string | undefined = flags.customStarter;
 
-    if (!starter) {
-      return this.error(errors.new.blog.invalid_starter(flags.starter));
+    if (!starterUrl) {
+      const starter = starters.find(s => s.name === flags.starter);
+
+      if (!starter) {
+        return this.error(errors.new.blog.invalid_starter(flags.starter));
+      }
+
+      starterUrl = starter.url;
     }
 
     if (args.path) {
-      await git.clone(starter.url, args.path, {
+      await git.clone(starterUrl, args.path, {
         log: this.log,
       });
       this.success("Done!");
