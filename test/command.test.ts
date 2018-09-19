@@ -72,6 +72,39 @@ describe("command", () => {
       });
   });
 
+  describe(".error()", () => {
+    fancy
+      .stdout()
+      .add("config", () => Config.load())
+      .do(async () => {
+        class CMD extends Command {
+          async run() {
+            this.error(new Error("ERROR"));
+          }
+        }
+        await CMD.run([]);
+      })
+      .catch(/ERROR/)
+      .it("caught error");
+  });
+
+  describe(".success()", () => {
+    fancy
+      .stdout()
+      .do(async () => {
+        class CMD extends Command {
+          async run() {
+            this.success("json output: %j", { a: "foobar" });
+          }
+        }
+        await CMD.run([]);
+      })
+      .do(ctx =>
+        expect(ctx.stdout).to.equal(' ✔️  json output: {"a":"foobar"}\n')
+      )
+      .it("uses util.format()");
+  });
+
   describe(".log()", () => {
     fancy
       .stdout()
