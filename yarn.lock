@@ -130,7 +130,15 @@
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
 
-"@oclif/command@^1", "@oclif/command@^1.5.0", "@oclif/command@^1.5.1":
+"@oclif/color@^0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-0.0.0.tgz#54939bbd16d1387511bf1a48ccda1a417248e6a9"
+  dependencies:
+    ansi-styles "^3.2.1"
+    supports-color "^5.4.0"
+    tslib "^1"
+
+"@oclif/command@^1", "@oclif/command@^1.4.31", "@oclif/command@^1.5.0", "@oclif/command@^1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.1.tgz#dd2e1c1f8e55dad73036d4cab036ac3550ff8c24"
   dependencies:
@@ -139,7 +147,7 @@
     debug "^4.0.1"
     semver "^5.5.1"
 
-"@oclif/config@^1", "@oclif/config@^1.7.6":
+"@oclif/config@^1", "@oclif/config@^1.6.22", "@oclif/config@^1.7.6":
   version "1.7.6"
   resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.7.6.tgz#849e5f79591c8dd29d99dd3aba0914b50e2c2e74"
   dependencies:
@@ -184,6 +192,19 @@
     chalk "^2.4.1"
     tslib "^1.9.3"
 
+"@oclif/plugin-autocomplete@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-autocomplete/-/plugin-autocomplete-0.1.0.tgz#3e813277deaa5f9fc6a67878a20bd337ee3776ec"
+  dependencies:
+    "@oclif/command" "^1.4.31"
+    "@oclif/config" "^1.6.22"
+    "@types/fs-extra" "^5.0.2"
+    chalk "^2.4.1"
+    cli-ux "^4.4.0"
+    debug "^3.1.0"
+    fs-extra "^6.0.1"
+    moment "^2.22.1"
+
 "@oclif/plugin-help@^2", "@oclif/plugin-help@^2.1.2":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-2.1.2.tgz#b6639e95157f563225a29b4329ce62e2e162afe9"
@@ -196,6 +217,16 @@
     strip-ansi "^4.0.0"
     widest-line "^2.0.0"
     wrap-ansi "^4.0.0"
+
+"@oclif/plugin-not-found@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.0.tgz#fe4aff027dcf72609c38aa733d2038e005d3f069"
+  dependencies:
+    "@oclif/color" "^0.0.0"
+    "@oclif/command" "^1.5.0"
+    cli-ux "^4.7.3"
+    fast-levenshtein "^2.0.6"
+    lodash "^4.17.10"
 
 "@oclif/screen@^1.0.2":
   version "1.0.3"
@@ -221,6 +252,12 @@
 "@types/events@*":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
+
+"@types/fs-extra@^5.0.2":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-5.0.4.tgz#b971134d162cc0497d221adde3dbb67502225599"
+  dependencies:
+    "@types/node" "*"
 
 "@types/glob@*":
   version "5.0.35"
@@ -393,7 +430,7 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-ansi-styles@^3.2.0, ansi-styles@^3.2.1:
+ansi-styles@^3.0.0, ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
   dependencies:
@@ -639,7 +676,7 @@ chai@^4:
     pathval "^1.0.0"
     type-detect "^4.0.0"
 
-chalk@^1.1.1, chalk@^1.1.3:
+chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
   resolved "http://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz#a8115c55e4a702fe4d150abd3872822a7e09fc98"
   dependencies:
@@ -706,7 +743,7 @@ cli-table@^0.3.1:
   dependencies:
     colors "1.0.3"
 
-cli-ux@^4.8.2:
+cli-ux@^4.4.0, cli-ux@^4.7.3, cli-ux@^4.8.2:
   version "4.8.2"
   resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-4.8.2.tgz#6be3c966919727106fba875de1dc771b2567de1d"
   dependencies:
@@ -1272,6 +1309,10 @@ fast-glob@^2.0.2:
     merge2 "^1.2.1"
     micromatch "^3.1.10"
 
+fast-levenshtein@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
+
 figures@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
@@ -1398,6 +1439,10 @@ get-caller-file@^1.0.1, get-caller-file@^1.0.2:
 get-func-name@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/get-func-name/-/get-func-name-2.0.0.tgz#ead774abee72e20409433a066366023dd6887a41"
+
+get-stdin@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -2262,7 +2307,7 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.2.0:
+minimist@^1.1.0, minimist@^1.2.0:
   version "1.2.0"
   resolved "http://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
@@ -2302,6 +2347,10 @@ mocha@^5:
 mock-stdin@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/mock-stdin/-/mock-stdin-0.3.1.tgz#c657d9642d90786435c64ca5e99bbd4d09bd7dd3"
+
+moment@^2.22.1:
+  version "2.22.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
 
 ms@2.0.0:
   version "2.0.0"
@@ -2547,6 +2596,10 @@ package-json@^4.0.0:
     registry-auth-token "^3.0.1"
     registry-url "^3.0.3"
     semver "^5.1.0"
+
+pad-component@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/pad-component/-/pad-component-0.0.1.tgz#ad1f22ce1bf0fdc0d6ddd908af17f351a404b8ac"
 
 parse-json@^4.0.0:
   version "4.0.0"
@@ -3191,6 +3244,13 @@ supports-hyperlinks@^1.0.1:
     has-flag "^2.0.0"
     supports-color "^5.0.0"
 
+taketalk@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/taketalk/-/taketalk-1.0.0.tgz#b4d4f0deed206ae7df775b129ea2ca6de52f26dd"
+  dependencies:
+    get-stdin "^4.0.1"
+    minimist "^1.1.0"
+
 tar-fs@^1.16.2:
   version "1.16.3"
   resolved "https://registry.yarnpkg.com/tar-fs/-/tar-fs-1.16.3.tgz#966a628841da2c4010406a82167cbd5e0c72d509"
@@ -3716,6 +3776,20 @@ yeoman-generator@^3.1.1:
 yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
+
+yosay@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/yosay/-/yosay-2.0.2.tgz#a7017e764cd88d64a1ae64812201de5b157adf6d"
+  dependencies:
+    ansi-regex "^2.0.0"
+    ansi-styles "^3.0.0"
+    chalk "^1.0.0"
+    cli-boxes "^1.0.0"
+    pad-component "0.0.1"
+    string-width "^2.0.0"
+    strip-ansi "^3.0.0"
+    taketalk "^1.0.0"
+    wrap-ansi "^2.0.0"
 
 yurnalist@^0.2.1:
   version "0.2.1"
