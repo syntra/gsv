@@ -40,7 +40,7 @@ export default class ConfigInit extends Command {
     const config = {
       title,
       url,
-      author: { name: gitConfig.user.name, email: gitConfig.user.email },
+      author: [{ name: gitConfig.user.name, email: gitConfig.user.email }],
     };
 
     // this.error(new Error("ERROR"));

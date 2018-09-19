@@ -17,5 +17,5 @@ export interface Social {
 export interface GSVRC {
   title: string;
   url: string;
-  author: Author;
+  author: Array<Author>;
 }
