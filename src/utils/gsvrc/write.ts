@@ -12,7 +12,6 @@ const write = async (config: GSVRC, force?: boolean): Promise<Error | any> => {
     );
   }
   return new Promise(resolve => {
-    console.log("writing file");
     writeFile(".gsvrc", YAML.stringify(config), resolve);
   });
 };
