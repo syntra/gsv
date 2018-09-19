@@ -14,6 +14,7 @@ USAGE
   $ gsv config:init
 
 OPTIONS
+  -d, --dry          don't write to .gsvrc
   -f, --force        overrides existing .gsvrc
   -h, --help         show CLI help
   -t, --title=title  (required) blog title

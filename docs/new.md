@@ -16,9 +16,10 @@ USAGE
   $ gsv new:blog [PATH]
 
 OPTIONS
+  -c, --customStarter=customStarter  use a custom git repo as a starter
   -f, --force
-  -h, --help             show CLI help
-  -n, --starter=starter  [default: default] gatsby sttarter to use
+  -h, --help                         show CLI help
+  -s, --starter=starter              [default: default] gatsby starter to use
 ```
 
 _See code: [src/commands/new/blog.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/blog.ts)_
