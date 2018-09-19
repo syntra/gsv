@@ -1,27 +1,27 @@
 import { flags } from "@oclif/command";
-import YAML from "yaml";
 
 import Command from "../../command";
 import git from "../../utils/git";
+import gsvrc from "../../utils/gsvrc";
 
 export default class ConfigInit extends Command {
   static description = "initialize a fresh .gsvrc file";
 
   static flags = {
     help: flags.help({ char: "h" }),
-    // flag with no value (-f, --force)
+    title: flags.string({
+      char: "t",
+      description: "blog title",
+      required: true,
+    }),
+    url: flags.string({ char: "u", description: "blog url", required: true }),
     force: flags.boolean({ char: "f" }),
   };
 
-  static args = [{ name: "file" }];
-
-  mkConfig(config: { name: string; email: string }) {
-    const author = { name: config.name, email: config.email };
-    return YAML.stringify({ author });
-  }
-
   async run() {
-    const { args, flags } = this.parse(ConfigInit);
+    const {
+      flags: { title, url, force },
+    } = this.parse(ConfigInit);
 
     const gitConfig = await git.config();
 
@@ -30,14 +30,12 @@ export default class ConfigInit extends Command {
       this.error("No config found");
     }
 
-    const config = this.mkConfig({ ...gitConfig.user });
+    const config = {
+      title,
+      url,
+      author: { name: gitConfig.user.name, email: gitConfig.user.email },
+    };
 
-    // TODO: save config to .gsvrc
-    this.log(config);
-
-    // TODO: allow the force flag to override existing .gsvrc file
-    if (flags.force) {
-      this.log(`you input --force and --file: ${args.file}`);
-    }
+    gsvrc.write(config, force).catch((err: string) => this.error(err));
   }
 }
