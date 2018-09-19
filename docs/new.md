@@ -1,7 +1,7 @@
 `gsv new`
 =========
 
-creates a new gatsby blog
+create new instances (blog|post|page)
 
 * [`gsv new:blog [PATH]`](#gsv-newblog-path)
 * [`gsv new:page [FILE]`](#gsv-newpage-file)
