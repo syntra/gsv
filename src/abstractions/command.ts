@@ -3,7 +3,7 @@ import * as Errors from "@oclif/errors";
 import chalk from "chalk";
 import { format, inspect } from "util";
 
-import { CLIError } from "./types";
+import { CLIError } from "../types";
 
 const emojic = require("emojic");
 

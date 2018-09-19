@@ -1,7 +1,7 @@
 import * as Config from "@oclif/config";
 import { expect, fancy } from "fancy-test";
 
-import Base from "../src/command";
+import Base from "../src/abstractions/command";
 
 class Command extends Base {
   static description = "test command";
