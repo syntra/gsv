@@ -11306,13 +11306,16 @@ yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
+
 yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.2.tgz#8452b4bb7e83c7c188d8041c1a837c773d6d8bb9"
 
-yaml@1.0.0-rc.8, yaml@^1.0.0-rc.8:
-  version "1.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.0.0-rc.8.tgz#e5604c52b7b07b16e469bcf875ab0dfe08c50d42"
+
+yaml@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.0.0.tgz#9d428cd4641c87ff4b17b2d4f4ab96bb6dd17154"
+
 
 yargs-parser@^10.0.0, yargs-parser@^10.1.0:
   version "10.1.0"
