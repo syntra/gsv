@@ -1,14 +1,15 @@
-# autocomplete
+`gsv autocomplete`
+==================
 
 display autocomplete installation instructions
 
-* [`gsv autocomplete [SHELL]`](autocomplete.md#gsv-autocomplete-shell)
+* [`gsv autocomplete [SHELL]`](#gsv-autocomplete-shell)
 
 ## `gsv autocomplete [SHELL]`
 
 display autocomplete installation instructions
 
-```text
+```
 USAGE
   $ gsv autocomplete [SHELL]
 
@@ -25,5 +26,4 @@ EXAMPLES
   $ gsv autocomplete --refresh-cache
 ```
 
-_See code:_ [_@oclif/plugin-autocomplete_](https://github.com/oclif/plugin-autocomplete/blob/v0.1.0/src/commands/autocomplete/index.ts)
-
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v0.1.0/src/commands/autocomplete/index.ts)_
