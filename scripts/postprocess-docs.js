@@ -2,8 +2,8 @@ const replace = require("replace-in-file");
 
 const options = {
   files: "README.md",
-  from: [/Command Topics/g, /#command-topics/g],
-  to: ["🔨 Command Topics", "#-command-topics"],
+  from: [/Command Topics/g, /#command-topics/g, "<!-- commands -->"],
+  to: ["🔨 Command Topics", "#-command-topics", "<!-- commands -->\n"],
 };
 
 const main = async () => {

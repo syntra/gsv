@@ -61,6 +61,7 @@ USAGE
 <!-- usagestop -->
 
 <!-- commands -->
+
 # 🔨 Command Topics
 
 * [`gsv autocomplete`](docs/autocomplete.md) - display autocomplete installation instructions
@@ -71,7 +72,8 @@ USAGE
 <!-- commandsstop -->
 
 # 💻 Contributing
-### ![Contributions welcome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)
+
+![Contributions welcome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)
 
 Want to help gsv grow? We welcome all contributions, big or small! Check out the [contributing docs](https://github.com/syntra/gsv/blob/master/CONTRIBUTING.md) for more information.
 
