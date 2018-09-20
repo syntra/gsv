@@ -3,6 +3,7 @@ import yosay = require("yosay");
 
 import Composable from "../abstractions/composable";
 import { GSVRC, Post } from "../types";
+import frontmatter from "../utils/frontmatter";
 import gsvrc from "../utils/gsvrc";
 
 class App extends Composable {
@@ -23,7 +24,8 @@ class App extends Composable {
         },
       ]);
 
-      const slug = slugify(prompt.title, {
+      const title = prompt.title.trim();
+      const slug = slugify(title, {
         lower: true,
         remove: /[*+~.()'"!:@]/g,
       });
@@ -55,12 +57,23 @@ class App extends Composable {
       ]);
 
       this.post = {
-        title: prompt.title,
+        title,
         slug: prompt.slug,
         date: prompt.date,
-        author: prompt.author,
-        tags: prompt.tags.split(","),
+        author: { name: prompt.author },
+        tags: prompt.tags.split(",").map(t => ({
+          name: t.trim(),
+        })),
       };
+
+      // TODO: move writing to a second method
+      // for some reason, when returning to the create post from the
+      // gsvrc generator, it doesn't start on this method. I tried adding
+      // a `write()` method, but when resuming this generator, it immediately
+      // tried writing instead of running this `prompting()` method.
+      const file = `${this.post.slug}.md`;
+      await this.writeFile(file, `${frontmatter.compile(this.post)}\n\n`);
+      this.log(yosay(`New post (${file}) created!`));
     } else {
       this.log(
         yosay(
@@ -73,10 +86,6 @@ class App extends Composable {
         composeWith: require.resolve("./post"),
       });
     }
-  }
-
-  async write() {
-    // TODO: write post data to frontmatter of new markdown doc
   }
 }
 
