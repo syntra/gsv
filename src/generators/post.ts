@@ -71,7 +71,9 @@ class App extends Composable {
       // gsvrc generator, it doesn't start on this method. I tried adding
       // a `write()` method, but when resuming this generator, it immediately
       // tried writing instead of running this `prompting()` method.
-      const file = `${this.post.slug}.md`;
+      const file = `${(this.gsvrc.dir && this.gsvrc.dir.posts) || "."}/${
+        this.post.slug
+      }.md`;
       await this.writeFile(file, `${frontmatter.compile(this.post)}\n\n`);
       this.log(yosay(`New post (${file}) created!`));
     } else {
