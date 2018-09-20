@@ -1,17 +1,16 @@
-`gsv new`
-=========
+# new
 
-create new instances (blog|post|page)
+create new instances \(blog\|post\|page\)
 
-* [`gsv new:blog [PATH]`](#gsv-newblog-path)
-* [`gsv new:page [FILE]`](#gsv-newpage-file)
-* [`gsv new:post`](#gsv-newpost)
+* [`gsv new:blog [PATH]`](new.md#gsv-newblog-path)
+* [`gsv new:page [FILE]`](new.md#gsv-newpage-file)
+* [`gsv new:post`](new.md#gsv-newpost)
 
 ## `gsv new:blog [PATH]`
 
 creates a new gatsby blog
 
-```
+```text
 USAGE
   $ gsv new:blog [PATH]
 
@@ -22,13 +21,13 @@ OPTIONS
   -s, --starter=starter              [default: default] gatsby starter to use
 ```
 
-_See code: [src/commands/new/blog.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/blog.ts)_
+_See code:_ [_src/commands/new/blog.ts_](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/blog.ts)
 
 ## `gsv new:page [FILE]`
 
 add a new page to the current blog
 
-```
+```text
 USAGE
   $ gsv new:page [FILE]
 
@@ -38,15 +37,16 @@ OPTIONS
   -n, --name=name  name to print
 ```
 
-_See code: [src/commands/new/page.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/page.ts)_
+_See code:_ [_src/commands/new/page.ts_](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/page.ts)
 
 ## `gsv new:post`
 
 generate a new multi-command CLI
 
-```
+```text
 USAGE
   $ gsv new:post
 ```
 
-_See code: [src/commands/new/post.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/post.ts)_
+_See code:_ [_src/commands/new/post.ts_](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/post.ts)
+

@@ -1,15 +1,14 @@
-`gsv help`
-==========
+# help
 
 display help for gsv
 
-* [`gsv help [COMMAND]`](#gsv-help-command)
+* [`gsv help [COMMAND]`](help.md#gsv-help-command)
 
 ## `gsv help [COMMAND]`
 
 display help for gsv
 
-```
+```text
 USAGE
   $ gsv help [COMMAND]
 
@@ -20,4 +19,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)_
+_See code:_ [_@oclif/plugin-help_](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)
+

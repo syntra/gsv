@@ -1,15 +1,14 @@
-`gsv config`
-============
+# config
 
 manage gsv config
 
-* [`gsv config:init`](#gsv-configinit)
+* [`gsv config:init`](config.md#gsv-configinit)
 
 ## `gsv config:init`
 
 initialize a fresh .gsvrc file
 
-```
+```text
 USAGE
   $ gsv config:init
 
@@ -21,4 +20,5 @@ OPTIONS
   -u, --url=url      (required) blog url
 ```
 
-_See code: [src/commands/config/init.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/config/init.ts)_
+_See code:_ [_src/commands/config/init.ts_](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/config/init.ts)
+
