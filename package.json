@@ -39,7 +39,9 @@
     "@types/yeoman-test": "^1.7.4",
     "chai": "^4",
     "chai-as-promised": "^7.1.1",
+    "gh-pages": "^2.0.0",
     "globby": "^8",
+    "ignite": "^1.2.11",
     "mocha": "^5",
     "nyc": "^13",
     "replace-in-file": "^3.4.2",
@@ -90,8 +92,12 @@
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme --multi && git add README.md",
-    "docs": "oclif-dev readme --multi",
-    "postdocs": "node scripts/postprocess-docs.js"
+    "docgen": "oclif-dev readme --multi --dir docs/pages/commands",
+    "postdocgen": "node scripts/postprocess-docs.js",
+    "docs": "ignite",
+    "docs:watch": "ignite -w",
+    "predocs:deploy": "npm run docs",
+    "docs:deploy": "gh-pages -d _ignite"
   },
   "types": "lib/index.d.ts"
 }

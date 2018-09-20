@@ -64,10 +64,10 @@ USAGE
 
 # 🔨 Command Topics
 
-* [`gsv autocomplete`](docs/autocomplete.md) - display autocomplete installation instructions
-* [`gsv config`](docs/config.md) - manage gsv config
-* [`gsv help`](docs/help.md) - display help for gsv
-* [`gsv new`](docs/new.md) - create new instances (blog|post|page)
+* [`gsv autocomplete`](docs/pages/commands/autocomplete.md) - display autocomplete installation instructions
+* [`gsv config`](docs/pages/commands/config.md) - manage gsv config
+* [`gsv help`](docs/pages/commands/help.md) - display help for gsv
+* [`gsv new`](docs/pages/commands/new.md) - create new instances (blog|post|page)
 
 <!-- commandsstop -->
 
