@@ -1,0 +1,11 @@
+{
+  "title": "gsv",
+  "githubURL": "https://github.com/syntra/gsv",
+  "baseURL": "/",
+  "bulmaTheme": "lux",
+
+  "plugins": [
+    ["Gist", "react-gist"],
+    ["ColorPicker, { SketchPicker, AlphaPicker }", "react-color"]
+  ]
+}
