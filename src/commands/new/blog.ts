@@ -1,6 +1,6 @@
 import { flags } from "@oclif/command";
 
-import Command from "../../command";
+import Command from "../../abstractions/command";
 import errors from "../../config/errors";
 import starters from "../../config/starters";
 import git from "../../utils/git";

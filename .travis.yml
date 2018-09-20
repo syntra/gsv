@@ -14,9 +14,10 @@ jobs:
       node_js: "lts/*"
       install:
         - yarn install
-        - npm install -g codecov codeclimate-test-reporter
+        - npm install -g codecov codeclimate-test-reporter codacy-coverage
       script:
         - yarn test
         - nyc report --report-dir=coverage/ --reporter=text-lcov > coverage.lcov
         - codecov
         - codeclimate-test-reporter < coverage.lcov
+        - codacy-coverage < coverage.lcov

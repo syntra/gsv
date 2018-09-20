@@ -1,6 +1,6 @@
 import { flags } from "@oclif/command";
 
-import Command from "../../command";
+import Command from "../../abstractions/command";
 import git from "../../utils/git";
 import gsvrc from "../../utils/gsvrc";
 
@@ -40,7 +40,7 @@ export default class ConfigInit extends Command {
     const config = {
       title,
       url,
-      author: { name: gitConfig.user.name, email: gitConfig.user.email },
+      author: [{ name: gitConfig.user.name, email: gitConfig.user.email }],
     };
 
     // this.error(new Error("ERROR"));
