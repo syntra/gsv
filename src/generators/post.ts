@@ -1,32 +1,66 @@
-import * as Generator from "yeoman-generator";
+import slugify from "slugify";
 import yosay = require("yosay");
 
-import { Author, GSVRC } from "../types";
-import git from "../utils/git";
+import Composable from "../abstractions/composable";
+import { GSVRC, Post } from "../types";
 import gsvrc from "../utils/gsvrc";
 
-class App extends Generator {
-  options: {
-    defaults?: boolean;
-    title?: string;
-    date?: string;
-    tags?: string;
-    author?: string;
-  };
-
+class App extends Composable {
   gsvrc!: GSVRC;
-  answers!: {};
-  author!: Author;
-
-  constructor(args: any, opts: any) {
-    super(args, opts);
-
-    this.options = {};
-  }
+  post!: Post;
 
   async prompting() {
     if (await gsvrc.exists()) {
       this.log(yosay("Feeling creative today?"));
+
+      await this.getConfig();
+
+      let prompt = await this.prompt([
+        {
+          type: "input",
+          name: "title",
+          message: "title",
+        },
+      ]);
+
+      const slug = slugify(prompt.title, {
+        lower: true,
+        remove: /[*+~.()'"!:@]/g,
+      });
+
+      prompt = await this.prompt([
+        {
+          type: "input",
+          name: "slug",
+          message: "slug",
+          default: slug,
+        },
+        {
+          type: "input",
+          name: "date",
+          message: "date",
+          default: new Date().toISOString(),
+        },
+        {
+          type: "list",
+          name: "author",
+          message: "author",
+          choices: this.gsvrc.author,
+        },
+        {
+          type: "input",
+          name: "tags",
+          message: "tags (comma separated)",
+        },
+      ]);
+
+      this.post = {
+        title: prompt.title,
+        slug: prompt.slug,
+        date: prompt.date,
+        author: prompt.author,
+        tags: prompt.tags.split(","),
+      };
     } else {
       this.log(
         yosay(
@@ -34,82 +68,15 @@ class App extends Generator {
         )
       );
 
-      const gitConfig = await git.config();
-      const author = gitConfig
-        ? { name: gitConfig.user.name, email: gitConfig.user.email }
-        : {};
-
-      // TODO: make a separate generator for gsvrc
-      const config = await this.prompt([
-        {
-          type: "input",
-          name: "title",
-          message: "what should the title of your blog be",
-        },
-        {
-          type: "input",
-          name: "url",
-          message: "what is your blogs url",
-        },
-        // TODO: the author portion of the gsvrc generator should have its own generator
-        {
-          type: "input",
-          name: "name",
-          message: "what is your name",
-          default: author.name,
-        },
-        {
-          type: "input",
-          name: "email",
-          message: "and your email",
-          default: author.email,
-        },
-      ]);
-
-      this.gsvrc = {
-        title: config.title,
-        url: config.url,
-        author: [
-          {
-            name: config.name,
-            email: config.email,
-          },
-        ],
-      };
-
-      await gsvrc.write(this.gsvrc).catch((err: string) => {
-        throw new Error(err);
+      // Run the gsvrc generator, then return to the post  generator
+      await this.composeWith(require.resolve("./gsvrc"), {
+        composeWith: require.resolve("./post"),
       });
-
-      this.log(
-        yosay(
-          "Great! Now that we have that taken care of, let's get back to that blog post."
-        )
-      );
     }
+  }
 
-    // this.answers = await this.prompt([
-    //   {
-    //     type: "input",
-    //     name: "title",
-    //     message: "title",
-    //   },
-    //   {
-    //     type: "input",
-    //     name: "author",
-    //     message: "title",
-    //   },
-    //   {
-    //     type: "input",
-    //     name: "title",
-    //     message: "title",
-    //   },
-    //   {
-    //     type: "input",
-    //     name: "title",
-    //     message: "title",
-    //   },
-    // ]);
+  async write() {
+    // TODO: write post data to frontmatter of new markdown doc
   }
 }
 
