@@ -18,6 +18,10 @@ export interface GSVRC {
   title: string;
   url: string;
   author: Array<Author>;
+  dir?: {
+    posts?: string;
+    pages?: string;
+  };
 }
 
 export interface Tag {
