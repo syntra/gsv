@@ -19,3 +19,16 @@ export interface GSVRC {
   url: string;
   author: Array<Author>;
 }
+
+export interface Tag {
+  name: string;
+  slug: string;
+}
+
+export interface Post {
+  title: string;
+  slug: string;
+  date: string;
+  author: Author;
+  tags: Array<Tag>;
+}
