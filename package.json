@@ -36,6 +36,7 @@
     "@types/node": "^10",
     "@types/rimraf": "^2.0.2",
     "@types/yeoman-generator": "^2.0.3",
+    "@types/yeoman-test": "^1.7.4",
     "chai": "^4",
     "chai-as-promised": "^7.1.1",
     "globby": "^8",
@@ -45,7 +46,8 @@
     "ts-node": "^7",
     "tslint": "^5",
     "tslint-config-prettier": "^1.15.0",
-    "typescript": "^3.0"
+    "typescript": "^3.0",
+    "yeoman-test": "^1.9.1"
   },
   "engines": {
     "node": ">=8.0.0"
