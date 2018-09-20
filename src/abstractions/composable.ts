@@ -1,3 +1,4 @@
+import { writeFile } from "fs";
 import * as Generator from "yeoman-generator";
 
 import { GSVRC } from "../types";
@@ -27,6 +28,12 @@ export default abstract class Composable extends Generator {
   async getConfig() {
     this.gsvrc = await gsvrc.read();
     return this.gsvrc;
+  }
+
+  async writeFile(file, data) {
+    return new Promise((resolve, reject) =>
+      writeFile(file, data, (err: Error) => (err ? reject(err) : resolve()))
+    );
   }
 
   async next() {
