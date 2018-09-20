@@ -8,10 +8,12 @@ describe("utils/gsvrc.write()", () => {
     await gsvrc.write({
       title: "Test Blog",
       url: "https://syntra.io",
-      author: {
-        name: "Garet McKinley",
-        email: "hi@garet.io",
-      },
+      author: [
+        {
+          name: "Garet McKinley",
+          email: "hi@garet.io",
+        },
+      ],
     });
     expect(existsSync(".gsvrc")).to.be.true;
     unlinkSync(".gsvrc");
@@ -21,10 +23,12 @@ describe("utils/gsvrc.write()", () => {
     const config = {
       title: "Test Blog",
       url: "https://syntra.io",
-      author: {
-        name: "Garet McKinley",
-        email: "hi@garet.io",
-      },
+      author: [
+        {
+          name: "Garet McKinley",
+          email: "hi@garet.io",
+        },
+      ],
     };
     await gsvrc.write(config);
     await gsvrc.write(config, true);

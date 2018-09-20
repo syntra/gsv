@@ -5,7 +5,7 @@ create new instances (blog|post|page)
 
 * [`gsv new:blog [PATH]`](#gsv-newblog-path)
 * [`gsv new:page [FILE]`](#gsv-newpage-file)
-* [`gsv new:post [FILE]`](#gsv-newpost-file)
+* [`gsv new:post`](#gsv-newpost)
 
 ## `gsv new:blog [PATH]`
 
@@ -40,18 +40,13 @@ OPTIONS
 
 _See code: [src/commands/new/page.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/page.ts)_
 
-## `gsv new:post [FILE]`
+## `gsv new:post`
 
-add a new post to the current blog
+generate a new multi-command CLI
 
 ```
 USAGE
-  $ gsv new:post [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ gsv new:post
 ```
 
 _See code: [src/commands/new/post.ts](https://github.com/syntra/gsv/blob/v0.0.1/src/commands/new/post.ts)_
