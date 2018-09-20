@@ -11,26 +11,26 @@
 </p>
 <p align="center">
   <a href="https://spectrum.chat/syntra/gsv">
-    <img src="https://img.shields.io/badge/chat-on%20spectrum-7B16FF.svg?style=flat-square" alt="Join the community on Spectrum." />
+    <img src="https://img.shields.io/badge/chat-on%20spectrum-7B16FF.svg?style=for-the-badge" alt="Join the community on Spectrum." />
   </a>
   <a href="https://github.com/syntra/gsv/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-974FC9.svg?style=flat-square" alt="gsv is released under the MIT license." />
+    <img src="https://img.shields.io/badge/license-MIT-974FC9.svg?style=for-the-badge" alt="gsv is released under the MIT license." />
   </a>
   <a href="https://travis-ci.org/syntra/gsv">
-    <img src="https://img.shields.io/travis/syntra/gsv.svg?style=flat-square" alt="Current TravisCI build status." />
+    <img src="https://img.shields.io/travis/syntra/gsv.svg?style=for-the-badge" alt="Current TravisCI build status." />
   </a>
   <a href="https://app.codacy.com/project/garetmckinley/gsv/dashboard">
-    <img src="https://img.shields.io/codacy/grade/952f258f9705475fb3b421ebfa041c00.svg?style=flat-square" alt="Code Climate maintainability grade." />
+    <img src="https://img.shields.io/codacy/grade/952f258f9705475fb3b421ebfa041c00.svg?style=for-the-badge" alt="Code Climate maintainability grade." />
   </a>
   <a href="https://app.codacy.com/project/garetmckinley/gsv/dashboard">
-    <img src="https://img.shields.io/codacy/coverage/952f258f9705475fb3b421ebfa041c00.svg?style=flat-square" alt="Code Climate test coverage." />
+    <img src="https://img.shields.io/codacy/coverage/952f258f9705475fb3b421ebfa041c00.svg?style=for-the-badge" alt="Code Climate test coverage." />
   </a>
-  <img src="https://img.shields.io/node/v/gsv.svg?style=flat-square" alt="Minimum node version supported." />
+  <img src="https://img.shields.io/node/v/gsv.svg?style=for-the-badge" alt="Minimum node version supported." />
   <a href="https://www.npmjs.org/package/gsv">
-    <img src="https://img.shields.io/npm/v/gsv.svg?style=flat-square" alt="Current npm package version." />
+    <img src="https://img.shields.io/npm/v/gsv.svg?style=for-the-badge" alt="Current npm package version." />
   </a>
   <a href="https://oclif.io/">
-    <img src="https://img.shields.io/badge/CLI-oclif-394351.svg?style=flat-square" alt="Powered by oclif." />
+    <img src="https://img.shields.io/badge/CLI-oclif-394351.svg?style=for-the-badge" alt="Powered by oclif." />
   </a>
   <img src="http://hits.dwyl.io/syntra/gsv.svg" />
 </p>
@@ -68,7 +68,7 @@ USAGE
 <!-- commandsstop -->
 
 # 💻 Contributing
-### ![Contributions welcome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
+### ![Contributions welcome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)
 
 Want to help gsv grow? We welcome all contributions, big or small! Check out the [contributing docs](https://github.com/syntra/gsv/blob/master/CONTRIBUTING.md) for more information.
 
