@@ -32,7 +32,6 @@
   <a href="https://oclif.io/">
     <img src="https://img.shields.io/badge/CLI-oclif-394351.svg?style=for-the-badge" alt="Powered by oclif." />
   </a>
-  <img src="http://hits.dwyl.io/syntra/gsv.svg" />
 </p>
 
 <img src="https://img.gitbutn.io/hint/?&txt=Notice:%20gsv%20is%20still%20in%20the%20early%20pre-alpha%20stage%20and%20not%20ready%20for%20use.&type=warning" width="100%" />
@@ -83,3 +82,5 @@ Want to help gsv grow? We welcome all contributions, big or small! Check out the
 # 📣 Feedback
 
 If you have any suggestions or just want to let us know what you think of gsv, join our [spectrum community](https://spectrum.chat/syntra/gsv)!
+
+<img src="http://hits.dwyl.io/syntra/gsv.svg" />
