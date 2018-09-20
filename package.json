@@ -39,6 +39,7 @@
     "@types/yeoman-test": "^1.7.4",
     "chai": "^4",
     "chai-as-promised": "^7.1.1",
+    "gh-pages": "^2.0.0",
     "globby": "^8",
     "ignite": "^1.2.11",
     "mocha": "^5",
@@ -94,7 +95,9 @@
     "docgen": "oclif-dev readme --multi --dir docs/pages/commands",
     "postdocgen": "node scripts/postprocess-docs.js",
     "docs": "ignite",
-    "docs:watch": "ignite -w"
+    "docs:watch": "ignite -w",
+    "predocs:deploy": "npm run docs",
+    "docs:deploy": "gh-pages -d _ignite"
   },
   "types": "lib/index.d.ts"
 }
