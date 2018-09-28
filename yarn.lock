@@ -4936,9 +4936,9 @@ function-source@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/function-source/-/function-source-0.1.0.tgz#d9104bf3e46788b55468c02bf1b2fabcf8fc19af"
 
-gatsby-cli@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.4.1.tgz#3e72a41bd3688db1d39ef491de086f306dc51343"
+gatsby-cli@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.4.2.tgz#6a89a854c5fdc285d9a01f7874f96994ae24a2b4"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
