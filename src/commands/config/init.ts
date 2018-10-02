@@ -15,6 +15,12 @@ export default class ConfigInit extends Command {
       required: true,
     }),
     url: flags.string({ char: "u", description: "blog url", required: true }),
+    name: flags.string({ char: "n", description: "your name", required: true }),
+    email: flags.string({
+      char: "e",
+      description: "your email",
+      required: true,
+    }),
     force: flags.boolean({
       char: "f",
       description: "overrides existing .gsvrc",
@@ -27,7 +33,7 @@ export default class ConfigInit extends Command {
 
   async run() {
     const {
-      flags: { title, url, force, dry },
+      flags: { title, url, name, email, force, dry },
     } = this.parse(ConfigInit);
 
     const gitConfig = await git.config();
@@ -40,7 +46,12 @@ export default class ConfigInit extends Command {
     const config = {
       title,
       url,
-      author: [{ name: gitConfig.user.name, email: gitConfig.user.email }],
+      author: [
+        {
+          name: name ? name : gitConfig.user.name,
+          email: email ? email : gitConfig.user.email,
+        },
+      ],
     };
 
     // this.error(new Error("ERROR"));
