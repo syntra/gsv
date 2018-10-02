@@ -7,7 +7,6 @@ class App extends Composable {
   gsvrc!: GSVRC;
 
   async prompting() {
-    console.log("options:", this.options);
     // try to extract name and email from git config
     const gitConfig = await git.config();
     const author = gitConfig
