@@ -9,6 +9,10 @@ describe("config:init", () => {
       '"test blog"',
       "--url",
       "https://syntra.io",
+      "--name",
+      "Garet McKinley",
+      "--email",
+      "hi@garet.io",
       "--dry",
     ])
     .it("runs dry", ctx => {
