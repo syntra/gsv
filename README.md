@@ -16,8 +16,8 @@
   <a href="https://github.com/syntra/gsv/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-974FC9.svg?style=for-the-badge" alt="gsv is released under the MIT license." />
   </a>
-  <a href="https://travis-ci.org/syntra/gsv">
-    <img src="https://img.shields.io/travis/syntra/gsv.svg?style=for-the-badge" alt="Current TravisCI build status." />
+  <a href="https://circleci.com/gh/syntra">
+    <img src="https://img.shields.io/circleci/project/github/syntra/gsv.svg?style=for-the-badge" alt="Current TravisCI build status." />
   </a>
   <a href="https://app.codacy.com/project/garetmckinley/gsv/dashboard">
     <img src="https://img.shields.io/codacy/grade/952f258f9705475fb3b421ebfa041c00.svg?style=for-the-badge" alt="Code Climate maintainability grade." />
