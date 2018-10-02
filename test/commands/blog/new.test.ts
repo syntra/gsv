@@ -28,7 +28,7 @@ describe("blog:new", () => {
 
   test
     .stdout()
-    .command(["blog:new", "test-blog"])
+    .command(["blog:new", "test-blog", "--skipConfig"])
     .it("creates new blog with default starter", ctx => {
       expect(existsSync("test-blog")).to.be.true;
       rimraf.sync("test-blog");
@@ -36,7 +36,13 @@ describe("blog:new", () => {
 
   test
     .stdout()
-    .command(["blog:new", "test-blog", "--customStarter", "test/__mock_repo"])
+    .command([
+      "blog:new",
+      "test-blog",
+      "--customStarter",
+      "test/__mock_repo",
+      "--skipConfig",
+    ])
     .it("creates new blog with custom starter", ctx => {
       expect(existsSync("test-blog")).to.be.true;
       rimraf.sync("test-blog");

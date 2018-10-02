@@ -1,6 +1,6 @@
 import { flags } from "@oclif/command";
 
-import Command from "../../abstractions/command";
+import Base from "../../abstractions/generator/base";
 import errors from "../../config/errors";
 import starters from "../../config/starters";
 import git from "../../utils/git";
@@ -9,7 +9,7 @@ import git from "../../utils/git";
 //   name: string;
 // }
 
-export default class NewBlog extends Command {
+export default class NewBlog extends Base {
   static description = "creates a new gatsby blog";
 
   static flags = {
@@ -22,6 +22,9 @@ export default class NewBlog extends Command {
     customStarter: flags.string({
       char: "c",
       description: "use a custom git repo as a starter",
+    }),
+    skipConfig: flags.boolean({
+      description: "skips the config step after creating blog",
     }),
     force: flags.boolean({ char: "f" }),
   };
@@ -52,6 +55,10 @@ export default class NewBlog extends Command {
         log: this.log,
       });
       this.success("Done!");
+    }
+
+    if (!flags.skipConfig) {
+      await super.generate("gsvrc");
     }
   }
 }
