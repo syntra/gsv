@@ -6,7 +6,7 @@ interface Starter {
 const starters: Array<Starter> = [
   {
     name: "default",
-    url: "https://github.com/gatsbyjs/gatsby-starter-blog",
+    url: "https://github.com/syntra/gsv-starter-default",
   },
 ];
 
