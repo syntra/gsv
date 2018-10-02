@@ -35,7 +35,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: yarn test
-      - run: nyc report --report-dir=coverage/ --reporter=text-lcov > coverage.lcov
+      - run: yarn coverage
       - run: codecov
       - run: codeclimate-test-reporter < coverage.lcov
       - run: codacy-coverage < coverage.lcov
