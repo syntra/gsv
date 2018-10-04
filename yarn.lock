@@ -1072,15 +1072,15 @@
     widest-line "^2.0.0"
     wrap-ansi "^4.0.0"
 
-"@oclif/plugin-not-found@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.0.tgz#fe4aff027dcf72609c38aa733d2038e005d3f069"
+"@oclif/plugin-not-found@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.1.tgz#117e49fb09e734665e765bc3cd38addb27a2ff7b"
   dependencies:
     "@oclif/color" "^0.0.0"
-    "@oclif/command" "^1.5.0"
-    cli-ux "^4.7.3"
+    "@oclif/command" "^1.5.1"
+    cli-ux "^4.8.2"
     fast-levenshtein "^2.0.6"
-    lodash "^4.17.10"
+    lodash "^4.17.11"
 
 "@oclif/screen@^1.0.2":
   version "1.0.3"
@@ -2983,7 +2983,7 @@ cli-table@^0.3.1:
   dependencies:
     colors "1.0.3"
 
-cli-ux@^4.4.0, cli-ux@^4.7.3, cli-ux@^4.8.2:
+cli-ux@^4.4.0, cli-ux@^4.8.2:
   version "4.8.2"
   resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-4.8.2.tgz#6be3c966919727106fba875de1dc771b2567de1d"
   dependencies:
