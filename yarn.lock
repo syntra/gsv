@@ -993,10 +993,10 @@
     tslib "^1"
 
 "@oclif/command@^1", "@oclif/command@^1.4.31", "@oclif/command@^1.5.0", "@oclif/command@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.1.tgz#dd2e1c1f8e55dad73036d4cab036ac3550ff8c24"
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.2.tgz#9c3fc042be785f8cec3f8f9c5d7768ebe80bb625"
   dependencies:
-    "@oclif/errors" "^1.2.0"
+    "@oclif/errors" "^1.2.1"
     "@oclif/parser" "^3.6.1"
     debug "^4.0.1"
     semver "^5.5.1"
