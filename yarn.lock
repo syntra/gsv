@@ -1002,10 +1002,11 @@
     semver "^5.5.1"
 
 "@oclif/config@^1", "@oclif/config@^1.6.22", "@oclif/config@^1.7.6":
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.8.6.tgz#97c6526e82cf0aa362aeb8201bb0d53423ecca3b"
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.13.2.tgz#c1dc25296bf06c039fd5fb0b90e4132be2213b2a"
   dependencies:
-    debug "^4.0.1"
+    "@oclif/parser" "^3.8.0"
+    debug "^4.1.1"
     tslib "^1.9.3"
 
 "@oclif/dev-cli@^1":
@@ -1038,12 +1039,12 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@oclif/linewrap/-/linewrap-1.0.0.tgz#aedcb64b479d4db7be24196384897b5000901d91"
 
-"@oclif/parser@^3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.6.1.tgz#dd0ad29d9178d75a2de30314874a6167675925ed"
+"@oclif/parser@^3.6.1", "@oclif/parser@^3.8.0":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.8.2.tgz#4578e99d8e26c7dc9bdf376e9f6184c03c1c8bad"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
-    chalk "^2.4.1"
+    chalk "^2.4.2"
     tslib "^1.9.3"
 
 "@oclif/plugin-autocomplete@^0.1.0":
@@ -2855,6 +2856,14 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.2, chalk@^2.4
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+chalk@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
+
 chardet@^0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
@@ -3659,9 +3668,9 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
+debug@^4.0.1, debug@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   dependencies:
     ms "^2.1.1"
 
