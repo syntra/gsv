@@ -1227,7 +1227,11 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^10", "@types/node@^10.9.4":
+"@types/node@*", "@types/node@^14":
+  version "14.11.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.5.tgz#fecad41c041cae7f2404ad4b2d0742fdb628b305"
+
+"@types/node@^10.9.4":
   version "10.11.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.11.4.tgz#e8bd933c3f78795d580ae41d86590bfc1f4f389d"
 
