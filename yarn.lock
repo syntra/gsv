@@ -12062,9 +12062,10 @@ yaml@1.0.0-rc.8:
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.0.0-rc.8.tgz#e5604c52b7b07b16e469bcf875ab0dfe08c50d42"
 
-yaml@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.0.0.tgz#9d428cd4641c87ff4b17b2d4f4ab96bb6dd17154"
+yaml@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.2.2.tgz#ec551ef37326e6d42872dad1970300f8eb83a073"
+  integrity sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==
 
 yargs-parser@^10.0.0:
   version "10.1.0"
