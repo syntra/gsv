@@ -24,7 +24,7 @@
     "yaml": "^1.0.0",
     "yeoman-environment": "^2.3.3",
     "yeoman-generator": "^3.1.1",
-    "yosay": "^2.0.2"
+    "yosay": "^3.0.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
